@@ -1,4 +1,14 @@
-<style type='text/css'>
+<html>
+	<head>
+	  <meta charset="utf-8">
+	  	<title>Bot Website</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	</head>
+
+	<body> 
+
+	<style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #5D5D5F;
 		font-family: "Roboto Regular", sans-serif;
@@ -7,7 +17,8 @@
 		outline: 1px solid #5D5D5F;
 	}
 </style>
-
+		
+		
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
@@ -31,7 +42,6 @@
 
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
-		embedded_svc.settings.smallCompanyLogoImgURL = "https://hrblockenterprise--poc2--c.visualforce.com/resource/1592316132000/MinimizedLogo?";
 
 		embedded_svc.init(
 			'https://hrblockenterprise--poc2.my.salesforce.com',
@@ -61,3 +71,7 @@
 		initESW('https://service.force.com');
 	}
 </script>
+	
+		
+	</body>
+</html>
