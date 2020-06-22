@@ -27,7 +27,12 @@
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 		embedded_svc.settings.smallCompanyLogoImgURL = "https://hrblockenterprise--poc2--c.visualforce.com/resource/1592316132000/MinimizedLogo?";
 		
-		// ***** Start code to disable standard contact creation
+		
+		
+		
+		// [][][][][][][][] BEGIN  .extraPrechatInfo    UPDATES [][][][][][][][]   
+		
+		// ***** START code to disable standard contact creation
 		
 		embedded_svc.settings.extraPrechatInfo = [{
 		  "entityFieldMaps": [{
@@ -50,11 +55,31 @@
 		    "label":"Email"
 		  }],
 		  "entityName":"Contact"
+		}, 
+		
+		// ***** END code to disable standard contact creation
+								  
+												  
+											
+		// ***** START code to create a person account 
+									  
+			{
+		  "entityName": "Account",
+		  "entityFieldMaps": [{
+			"isExactMatch": true,
+			"fieldName": "Name",
+			"doCreate": true,
+			"doFind": true,
+			"label": "LastName"
+		  }]
 		}];
 		
-		// ***** End code to disable standard contact creation
+		// ***** END code to create a person account 
 
+		// [][][][][][][][] FINISHED  .extraPrechatInfo    UPDATES [][][][][][][][]   
 
+		
+		
 		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
 		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 
